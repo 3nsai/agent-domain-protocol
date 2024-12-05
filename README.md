@@ -223,20 +223,6 @@ ADP workflows adopt N8N-compatible syntax to simplify workflow design and execut
 }
 ```
 
----
-
-## Integrated and Compatible Projects
-
-### AI and Model Hosting
-| Project         | Description                                         | Website                                | GitHub                                   |
-|-----------------|-----------------------------------------------------|----------------------------------------|------------------------------------------|
-| OpenWebUI       | Import/export prompts and models seamlessly.        | [Website](https://openwebui.com/)      | [GitHub](https://github.com/open-webui)  |
-| Ollama          | Open-source model hosting for agents.               | [Website](https://ollama.com/)         | [GitHub](https://github.com/ollama)      |
-
-### Blockchain Ecosystems
-| Project         | Description                                         | Website                                | GitHub                                   |
-|-----------------|-----------------------------------------------------|----------------------------------------|------------------------------------------|
-| Moonbeam        | EVM-compatible blockchain for multichain deployment. | [Website](https://moonbeam.network/)  | [GitHub](https://github.com/moonbeam)   |
 
 ---
 
