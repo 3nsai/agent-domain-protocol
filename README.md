@@ -58,21 +58,39 @@ Our ongoing research also includes exploring DeFi innovations such as Beefy Prot
 
 ### Get Started in Minutes
 
-1. **Clone the Repository**  
-   ```bash
-   git clone https://github.com/agent-domain-protocol/agent-domain-protocol.git
-   cd agent-domain-protocol
-   ```
+## Prerequisites
 
-2. **Install Dependencies**  
-   ```bash
-   npm install
-   ```
+You need the following installed on your development machine:
 
-3. **Run Local Environment**  
-   ```bash
-   npm start
+* [git](https://git-scm.com/downloads)
+* Node.js and pnpm. Minimum version Node 18. You can find instructions on how to install both using nvm (Node Version Manager) for Linux, Mac, and WSL [here](https://github.com/nvm-sh/nvm). For Windows users, refer to Microsoft's guide to [Install NodeJS on Windows](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-windows).
+* Install n8n with:
+  ```
+  pnpm install n8n -g
+  ```
+* Recommended: follow n8n's guide to [set up your development environment](https://docs.n8n.io/integrations/creating-nodes/build/node-development-environment/).
+
+## Using ADM
+
+These are the basic steps for working with this repo. 
+
+1. Clone the repo:
    ```
+   git clone https://github.com/3nsai/agent-domain-protocol.git
+   ```
+2. Run `pnpm i` to install dependencies.
+3. Open the project in your editor.
+4. Browse the examples in `/nodes` and `/credentials`. Modify the examples, or replace them with your own nodes.
+5. Update the `package.json` to match your details.
+6. Run `pnpm lint` to check for errors or `pnpm lintfix` to automatically fix errors when possible.
+7. Test your node locally. Refer to N8N [Run your node locally](https://docs.n8n.io/integrations/creating-nodes/test/run-node-locally/) for guidance.
+8. Replace this README with documentation for your node. Use the [README_TEMPLATE](README_TEMPLATE.md) to get started.
+9. Update the LICENSE file to use your details.
+10. [Publish](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry) your package to npm.
+
+## More information on N8N
+
+Refer to N8N [documentation on creating nodes](https://docs.n8n.io/integrations/creating-nodes/) for detailed information on building your own nodes.
 
 ---
 
@@ -193,6 +211,8 @@ ADP workflows are the beating heart of agent automation, enabling tasks to execu
 ## Workflow Syntax
 
 ADP workflows adopt N8N-compatible syntax to simplify workflow design and execution. Nodes define individual tasks, while connections define their dependencies.
+
+
 
 ---
 
