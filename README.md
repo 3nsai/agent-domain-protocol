@@ -81,36 +81,27 @@ These are the basic steps for working with this repo.
    git clone https://github.com/3nsai/agent-domain-protocol.git
    ```
 
-   Note: if you are on windows and do not have pmpm installed try the powershell command and ensure the echo $env:PNPM_HOME is set  
-   iwr https://get.pnpm.io/install.ps1 -useb | iex
-   echo $env:PNPM_HOME
+  
 
-   or if you're running the the installation locally i.e. 
-   npm install n8n
-   run
-   npm install
-   npm build
-   npm link
-   cd $env:USERPROFILE\.n8n\custom\
-   npm link n8n-nodes-friendgrid
-
-
-2. Run `npm i` to install dependencies.
-   Don't forget to cd $env:USERPROFILE\.n8n\custom\
-   PS C:\Users\<yourusername>\.n8n\custom> npm link n8n-nodes-web3namingsystem
-
-3. Open the project in your editor.
-4. Browse the examples in `/nodes` and `/credentials`. Modify the examples, or replace them with your own nodes.
+ 
+   npm install n8n -g 
+   2. `npm i` to install dependencies.
+   3. `npm build`
+   4. `npm link`
+   5. `cd $env:USERPROFILE\.n8n\custom\`
+   6. `npm link n8n-nodes-web3namingsystem`
+7. Open the project in your editor.
+8. Browse the Web3 Naming System in `/nodes` and `/credentials`. Modify the as needed.
 5. Update the `package.json` to match your details.
 6. Optional if you are using pnpm Run `pnpm lint` to check for errors or `pnpm lintfix` to automatically fix errors when possible.
-7. Test your node locally. Refer to N8N [Run your node locally](https://docs.n8n.io/integrations/creating-nodes/test/run-node-locally/) for guidance.
-8. Replace this README with documentation for your node. Use the [README_TEMPLATE](README_TEMPLATE.md) to get started.
+7. `n8n start`  Refer to N8N [Run your node locally](https://docs.n8n.io/integrations/creating-nodes/test/run-node-locally/) for guidance.
+8. Update this README with documentation. Use the [WEB3_NAMING_SYSTEM_README_TEMPLATE](WEB3_NAMING_SYSTEM_README_TEMPLATE.md) to get started.
 9. Update the LICENSE file to use your details.
 10. [Publish](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry) your package to npm.
 
-## More information on N8N
+## More information
 
-Refer to N8N [documentation on creating nodes](https://docs.n8n.io/integrations/creating-nodes/) for detailed information on building your own nodes.
+Visit to N8N [documentation on creating nodes](https://docs.n8n.io/integrations/creating-nodes/) for detailed information on building your own nodes.
 
 ---
 
